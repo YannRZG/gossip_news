@@ -4,14 +4,16 @@
   </head>
   <body>
     <h1>Page Potin !</h1>
-    <a>Voici la page du potin <%=id%></a>
+    <a>Voici la page de l'article  <%=id%></a>
     
   <p>
     Son auteur : <%= gossip.author %><br/>
-    Le contenu du Potin : <%= gossip.content %>
+    Le contenu du Potin : <%= gossip.content %></br>
+    
+    <a href='/gossips/edit'>Modifier le potin</a>
   </p>
 
-    <a href='/'>retour à l'accueil</a>
+    <a href='/'>Retour à l'accueil</a>
   </body>
 </html>
 

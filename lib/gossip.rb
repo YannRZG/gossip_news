@@ -29,13 +29,15 @@ class Gossip
     
     end
 
-    def self.update
-    
+    def update(id, author, content)
+        self.all.each_with_index do |gossip, i|
+            if i == id then
+            end
+        end
+        CSV.open("./db/gossip.csv", "ab") do |csv|
+            csv << [@author, @content]
+        end
     end
-
-      
-    
- 
     
 end
 
